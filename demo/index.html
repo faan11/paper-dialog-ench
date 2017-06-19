@@ -10,6 +10,7 @@
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../paper-button/paper-button.html">
     <link rel="import" href="../paper-dialog-ench.html">
 
     <style is="custom-style" include="demo-pages-shared-styles">
@@ -20,7 +21,32 @@
       <h3>Basic paper-dialog-ench demo</h3>
       <demo-snippet>
         <template>
-          <paper-dialog-ench></paper-dialog-ench>
+          <paper-button onClick="document.getElementById('dialog').open()">Open it</paper-button>
+          <paper-dialog-ench id="dialog" title="Title 1" >
+            <paper-button >Test 1</paper-button>
+          </paper-dialog-ench>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Basic paper-dialog-ench demo 2 </h3>
+      <demo-snippet>
+        <template>
+          <paper-button onClick="document.getElementById('dialog1').open()">Open it</paper-button>
+          <paper-dialog-ench id="dialog1" with-button title="Title 2" button-text="text">
+            <paper-button >Test 3</paper-button>
+          </paper-dialog-ench>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Basic paper-dialog-ench demo 3 </h3>
+      <demo-snippet>
+        <template>
+          <paper-button onClick="document.getElementById('dialog2').open()">Open it</paper-button>
+          <paper-dialog-ench id="dialog2" with-button  without-button-border title="Title 3" button-text="text">
+              <paper-button >Test 2</paper-button>
+          </paper-dialog-ench>
         </template>
       </demo-snippet>
     </div>

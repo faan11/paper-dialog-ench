@@ -1,6 +1,6 @@
 # \<paper-dialog-ench\>
 
-A paper dialog with a title and a close button.
+
 
 ## Install the Polymer-CLI
 
