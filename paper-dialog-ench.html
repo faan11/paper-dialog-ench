@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`paper-dialog-ench`
+A paper dialog with a title and a close button.
+
+@demo demo/index.html
+-->
+
+<dom-module id="paper-dialog-ench">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'paper-dialog-ench',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'paper-dialog-ench',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
