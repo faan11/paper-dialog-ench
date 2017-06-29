@@ -24,40 +24,14 @@
         @apply(--layout-flex);
       }
 
-      paper-dialog{
+      paper-dialog-ench{
         background: white !important;
         box-shadow:0px 0px 0px 0px !important;
       }
 
-      paper-dialog.centerfullscreen {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        right: inherit;
-        bottom: inherit;
-        padding: inherit;
-        margin: inherit;
-        max-height: initial !important;
-        max-width: initial !important;
-        box-shadow: none;
-      }
 
-    @media only screen and (min-width: 768px) {
-      /**Desktop**/
-
-      paper-dialog.centerfullscreen {
-        padding-top: auto;
-        /*  background-color: transparent;*/
-        box-shadow: none;
-      }
-
-    }
     @media only screen and (max-width: 768px) {
-      paper-dialog{
-        height:100% !important;
-        width:100% !important;
-      }
+
       .macrod_list{
         padding-left:0px !important;
         padding-right:0px !important;
@@ -75,6 +49,7 @@
     #titleContent{
       font-size: 1.8em;
       padding: 5px;
+      padding-top: 10px;
       color: var(--paper-dialog-ench-title-color,white);
       display: flex;
       align-items: center;
