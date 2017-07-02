@@ -117,7 +117,7 @@
     }
     </style>
 
-    <paper-dialog id="papDialog" class="centerfullscreen"  exit-animation="fade-out-animation" with-backdrop="{{withBackdrop}}">
+    <paper-dialog id="papDialog" class="centerfullscreen" on-iron-overlay-closed="_onClose" exit-animation="fade-out-animation" with-backdrop="{{withBackdrop}}">
 
           <div  class="container flex-horizontal title_container">
             <div ><h2 id="titleContent" ></h2></div>
@@ -181,6 +181,9 @@
           value:"chevron-left"
         },
       },
+      _onClose:function(){
+        this.fire("close");
+      }
       _withButtonBorder:function(newValue,oldValue){
         this._classButtonLabel = newValue?"noBorder":"";
       },
